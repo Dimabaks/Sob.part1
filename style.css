@@ -37,10 +37,12 @@ header {
     top: 0;
 }
 
-header h1 {
+header .header__logo {
+    text-decoration: none;
     width: auto;
     color: white;
     font-size: 36px;
+    font-weight: 400;
     font-family: 'Prata', sans-serif;
     letter-spacing: 0.03em;
 }
@@ -54,6 +56,10 @@ nav {
 nav a {
     font-family: Arial, sans-serif;
     font-style: italic;
+}
+
+nav a:hover {
+    color: blue;
 }
 
 .menu {
@@ -171,6 +177,7 @@ nav a {
 }
 
 .promo_btn {
+    cursor: pointer;
     text-transform: uppercase;
     background-color:white;
     border-radius: 4px;
@@ -442,11 +449,7 @@ nav a {
         padding: 30px 60px 20px 60px;
     }
 
-    header h1 {
-        width: auto;
-    }
-
-    header a {
+    header li a {
         text-decoration: none;
         padding-right: 20px;
         color: white;
@@ -477,7 +480,7 @@ nav a {
     header {
         padding: 30px 60px 0 60px;
     }
-    header h1 {
+    header .header__logo {
         width: auto;
         font-size: 28px;
     }
@@ -526,8 +529,9 @@ nav a {
         grid-column: 1 / 3;
         grid-row: 1 / 2 ;
         width: 100%;
+        z-index: 3;
     }
-    header h1 {
+    header .header__logo {
         width: auto;
     }
     nav {
@@ -598,7 +602,7 @@ nav a {
         padding: 30px 40px 0 40px;
     }
 
-    header h1 {
+    header .header__logo {
         width: auto;
         font-size: 26px;
     }
@@ -682,12 +686,12 @@ nav a {
         justify-content: space-between;
     }
 
-    header h1 {
+    header .header__logo {
         width: auto;
         font-size: 22px;
     }
 
-    header a {
+    header li a {
         text-decoration: none;
         color: white;
         justify-content: space-around;
@@ -902,7 +906,7 @@ nav a {
         padding: 15px 40px 0 40px;
     }
     
-    header h1 {
+    header .header__logo {
         width: auto;
         font-size: 22px;
     }
